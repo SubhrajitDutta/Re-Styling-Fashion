@@ -92,7 +92,7 @@ function Index() {
       {/* HOW IT WORKS */}
       <section className="max-w-7xl mx-auto px-4 md:px-8 py-16">
         <div className="text-center mb-12">
-          <h2 className="font-display font-extrabold text-4xl md:text-5xl">three vibes, <span className="text-gradient">one closet</span></h2>
+          <h2 className="font-display font-extrabold text-4xl md:text-5xl">Three Vibes, <span className="text-gradient">One Closet</span></h2>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {[
