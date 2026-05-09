@@ -45,7 +45,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "re/styling — circular fashion for Gen Z" },
+      { title: "re-stylin — circular fashion for Gen Z" },
       { name: "description", content: "Buy, rent and donate pre-loved clothing. Earn points for every donation." },
     ],
     links: [{ rel: "stylesheet", href: appCss }],

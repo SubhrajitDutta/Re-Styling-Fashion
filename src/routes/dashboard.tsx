@@ -5,7 +5,7 @@ import { Coins, Gift, Recycle, ShoppingBag, TrendingUp } from "lucide-react";
 export const Route = createFileRoute("/dashboard")({
   head: () => ({
     meta: [
-      { title: "Wallet — re/styling" },
+      { title: "Wallet — re-stylin" },
       { name: "description", content: "Track your Re-Styling Points and orders." },
     ],
   }),

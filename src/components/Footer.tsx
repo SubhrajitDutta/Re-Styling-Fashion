@@ -10,7 +10,7 @@ export function Footer() {
             <div className="w-8 h-8 rounded-lg bg-blush-grad grid place-items-center">
               <Sparkles className="w-4 h-4 text-white" />
             </div>
-            <span className="font-display font-extrabold">re/styling</span>
+            <span className="font-display font-extrabold">re-stylin</span>
           </div>
           <p className="text-sm text-muted-foreground max-w-xs">
             Pre-loved fashion for the next generation. Buy. Rent. Donate. Slay.
@@ -40,7 +40,7 @@ export function Footer() {
         ))}
       </div>
       <div className="border-t border-border py-6 text-center text-xs text-muted-foreground">
-        © 2026 re/styling — circular fashion, infinite vibes.
+        © 2026 re-stylin — circular fashion, infinite vibes.
       </div>
     </footer>
   );

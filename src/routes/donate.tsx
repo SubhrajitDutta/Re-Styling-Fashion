@@ -5,7 +5,7 @@ import { Heart, Coins, Truck, Gift, ArrowRight } from "lucide-react";
 export const Route = createFileRoute("/donate")({
   head: () => ({
     meta: [
-      { title: "Donate & earn — re/styling" },
+      { title: "Donate & earn — re-stylin" },
       { name: "description", content: "Donate clothes, earn 5 points each. 5 points = ₹1." },
     ],
   }),
