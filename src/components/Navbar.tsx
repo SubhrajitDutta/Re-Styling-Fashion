@@ -31,7 +31,7 @@ export function Navbar({ onAuthClick }: Props) {
             <Sparkles className="w-4 h-4 text-white" />
           </div>
           <span className="font-display font-extrabold text-lg tracking-tight">
-            re<span className="text-gradient">-</span>styling
+            Re<span className="text-gradient">-</span>Stylin
           </span>
         </Link>
 
