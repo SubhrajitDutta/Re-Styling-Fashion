@@ -45,12 +45,12 @@ function Sell() {
           <Section icon={Camera} title="Photos">
             <div className="grid grid-cols-3 gap-3">
               {photos.map((p, i) => (
-                <div key={i} className="aspect-square rounded-2xl overflow-hidden bg-white/5">
+                <div key={i} className="aspect-square rounded-2xl overflow-hidden bg-primary/5">
                   <img src={p} className="w-full h-full object-cover" />
                 </div>
               ))}
               {photos.length < 6 && (
-                <label className="aspect-square rounded-2xl border-2 border-dashed border-border grid place-items-center cursor-pointer hover:bg-white/5 transition">
+                <label className="aspect-square rounded-2xl border-2 border-dashed border-border grid place-items-center cursor-pointer hover:bg-primary/10 transition">
                   <input type="file" accept="image/*" multiple className="hidden" onChange={onUpload} />
                   <div className="text-center">
                     <Upload className="w-5 h-5 mx-auto mb-1 text-muted-foreground" />
@@ -74,7 +74,7 @@ function Sell() {
             <div className="flex flex-wrap gap-2">
               {TYPES[gender].map((t) => (
                 <button key={t} type="button" onClick={() => setType(t)}
-                  className={`px-3 py-1.5 rounded-full text-xs font-medium ${type === t ? "bg-white text-black" : "bg-white/5 hover:bg-white/10"}`}>
+                  className={`px-3 py-1.5 rounded-full text-xs font-medium ${type === t ? "bg-white text-black" : "bg-primary/5 hover:bg-primary/10"}`}>
                   {t}
                 </button>
               ))}

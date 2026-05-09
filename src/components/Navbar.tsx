@@ -59,10 +59,10 @@ export function Navbar({ onAuthClick }: Props) {
         </nav>
 
         <div className="flex items-center gap-2">
-          <button className="hidden sm:grid place-items-center w-10 h-10 rounded-full glass hover:bg-white/10 transition">
+          <button className="hidden sm:grid place-items-center w-10 h-10 rounded-full glass hover:bg-primary/10 transition">
             <Heart className="w-4 h-4" />
           </button>
-          <button className="grid place-items-center w-10 h-10 rounded-full glass hover:bg-white/10 transition relative">
+          <button className="grid place-items-center w-10 h-10 rounded-full glass hover:bg-primary/10 transition relative">
             <ShoppingBag className="w-4 h-4" />
             <span className="absolute -top-1 -right-1 w-4 h-4 text-[10px] grid place-items-center bg-gold-grad text-black rounded-full font-bold">2</span>
           </button>
@@ -90,7 +90,7 @@ export function Navbar({ onAuthClick }: Props) {
                 key={l.to}
                 to={l.to}
                 onClick={() => setOpen(false)}
-                className="px-4 py-3 rounded-xl hover:bg-white/5 text-sm font-medium"
+                className="px-4 py-3 rounded-xl hover:bg-primary/10 text-sm font-medium"
               >
                 {l.label}
               </Link>

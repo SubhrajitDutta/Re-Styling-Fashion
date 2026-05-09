@@ -51,7 +51,7 @@ export function ProductCard({ p, idx = 0 }: { p: Product; idx?: number }) {
             <div className="text-[10px] text-muted-foreground">Buy</div>
             <div className="font-display font-extrabold text-lg text-gradient">₹{p.price}</div>
           </div>
-          <button className="px-3 py-1.5 rounded-full bg-white/10 hover:bg-blush-grad text-xs font-semibold transition">
+          <button className="px-3 py-1.5 rounded-full bg-primary/10 hover:bg-blush-grad text-xs font-semibold transition">
             Add
           </button>
         </div>

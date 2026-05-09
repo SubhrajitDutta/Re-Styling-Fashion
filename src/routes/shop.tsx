@@ -249,7 +249,7 @@ function Group({ title, children }: { title: string; children: React.ReactNode }
 function Pill({ active, onClick, children }: { active?: boolean; onClick?: () => void; children: React.ReactNode }) {
   return (
     <button onClick={onClick}
-      className={`px-3 py-1.5 rounded-full text-xs font-medium transition ${active ? "bg-blush-grad text-white" : "bg-white/5 hover:bg-white/10"}`}>
+      className={`px-3 py-1.5 rounded-full text-xs font-medium transition ${active ? "bg-blush-grad text-white" : "bg-primary/5 hover:bg-primary/10"}`}>
       {children}
     </button>
   );
