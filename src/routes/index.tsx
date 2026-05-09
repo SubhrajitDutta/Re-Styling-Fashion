@@ -85,13 +85,18 @@ function Index() {
                 </motion.div>
               ))}
             </div>
-            <div className="absolute -bottom-4 -left-4 px-4 py-3 glass-strong rounded-2xl flex items-center gap-3 glow">
-              <div className="w-10 h-10 rounded-full bg-gold-grad grid place-items-center"><Coins className="w-5 h-5 text-black" /></div>
-              <div>
-                <div className="text-xs text-muted-foreground">You earned</div>
-                <div className="font-display font-bold text-sm">+25 points</div>
+            <motion.div
+              initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }}
+              className="absolute bottom-3 left-3 md:bottom-4 md:left-4 px-3 py-2 md:px-4 md:py-3 glass-strong rounded-2xl flex items-center gap-2 md:gap-3 glow z-10"
+            >
+              <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gold-grad grid place-items-center shrink-0">
+                <Coins className="w-4 h-4 md:w-5 md:h-5 text-black" />
               </div>
-            </div>
+              <div className="leading-tight">
+                <div className="text-[10px] md:text-xs text-muted-foreground">You earned</div>
+                <div className="font-display font-bold text-xs md:text-sm whitespace-nowrap">+25 points</div>
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       </section>
