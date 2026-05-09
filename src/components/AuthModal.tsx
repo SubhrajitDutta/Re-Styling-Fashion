@@ -43,7 +43,7 @@ export function AuthModal({ open, onClose }: Props) {
                 <div className="w-9 h-9 rounded-lg bg-blush-grad grid place-items-center">
                   <Sparkles className="w-4 h-4 text-white" />
                 </div>
-                <span className="font-display font-extrabold">re-stylin</span>
+                <span className="font-display font-extrabold">Re-Stylin</span>
               </div>
 
               <AnimatePresence mode="wait">
@@ -61,7 +61,7 @@ export function AuthModal({ open, onClose }: Props) {
                   </h2>
                   <p className="text-sm text-muted-foreground mb-6">
                     {mode === "login" && "Log in to your closet"}
-                    {mode === "signup" && "Create your re-stylin account in seconds"}
+                    {mode === "signup" && "Create your Re-Stylin account in seconds"}
                     {mode === "forgot" && "We'll send a code to reset your password"}
                   </p>
 
