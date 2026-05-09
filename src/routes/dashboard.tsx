@@ -41,7 +41,7 @@ function Dashboard() {
           </div>
           <div className="relative mt-4 flex items-baseline gap-3">
             <div className="font-display font-black text-7xl text-white">{points}</div>
-            <div className="text-white/70">points</div>
+            <div className="text-white/70">Points</div>
           </div>
           <div className="relative text-gradient-gold font-display font-bold text-xl mt-2">≈ ₹{inr} to spend</div>
           <Link to="/shop" className="relative inline-flex items-center gap-2 mt-6 px-5 py-3 rounded-full bg-white text-black font-semibold text-sm">
