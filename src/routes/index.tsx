@@ -21,71 +21,49 @@ function Index() {
         <div className="absolute -top-40 -left-40 w-96 h-96 rounded-full bg-blush-grad opacity-30 blur-3xl animate-blob" />
         <div className="absolute top-20 -right-40 w-[500px] h-[500px] rounded-full bg-hero opacity-40 blur-3xl animate-blob" style={{ animationDelay: "3s" }} />
 
-        <div className="relative max-w-7xl mx-auto px-4 md:px-8 pt-12 md:pt-24 pb-16 md:pb-32 grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-xs font-semibold uppercase tracking-widest"
-            >
-              <Sparkles className="w-3 h-3 text-gradient-gold" /> Drop 02 · Live Now
-            </motion.div>
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
-              className="mt-6 font-display font-black text-5xl md:text-7xl lg:text-8xl leading-[0.9]"
-            >
-              Wear It<br />
-              <span className="text-gradient">Once.</span><br />
-              Love It <span className="text-gradient-gold">Always.</span>
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}
-              className="mt-6 text-lg text-muted-foreground max-w-md"
-            >
-              Rent the fit for tonight's party. Sell what you've outgrown. Donate and earn ₹ in your wallet. Fashion that loops.
-            </motion.p>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
-              className="mt-8 flex flex-wrap gap-3"
-            >
-              <Link to="/shop" className="group flex items-center gap-2 px-6 py-3.5 rounded-full bg-blush-grad text-white font-semibold glow hover:scale-105 transition">
-                Shop the drop <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition" />
-              </Link>
-              <Link to="/sell" className="px-6 py-3.5 rounded-full glass font-semibold hover:bg-white/10 transition">
-                Sell your closet
-              </Link>
-            </motion.div>
-
-            <div className="mt-12 grid grid-cols-3 gap-6 max-w-md">
-              {[
-                { n: "12K+", l: "Fits Listed" },
-                { n: "₹2L+", l: "Donated Value" },
-                { n: "98%", l: "Happy Resellers" },
-              ].map((s) => (
-                <div key={s.l}>
-                  <div className="text-2xl md:text-3xl font-display font-extrabold text-gradient-gold">{s.n}</div>
-                  <div className="text-xs text-muted-foreground">{s.l}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-
+        <div className="relative max-w-6xl mx-auto px-4 md:px-8 pt-12 md:pt-24 pb-16 md:pb-28 text-center">
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2 }}
-            className="relative aspect-square max-w-lg mx-auto"
+            initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-xs font-semibold uppercase tracking-widest"
           >
-            <div className="absolute inset-0 grid grid-cols-2 gap-3">
-              {MOCK_PRODUCTS.slice(0, 4).map((p, i) => (
-                <motion.div
-                  key={p.id}
-                  animate={{ y: [0, -10, 0] }}
-                  transition={{ duration: 4 + i, repeat: Infinity, delay: i * 0.3 }}
-                  className={`relative rounded-3xl overflow-hidden glass ${i % 2 ? "mt-8" : ""}`}
-                >
-                  <img src={p.image} alt={p.title} className="w-full h-full object-cover" />
-                </motion.div>
-              ))}
-            </div>
+            <Sparkles className="w-3 h-3 text-gradient-gold" /> Drop 02 · Live Now
           </motion.div>
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
+            className="mt-6 font-display font-black text-5xl md:text-7xl lg:text-8xl leading-[1.05] tracking-tight"
+          >
+            Wear It <span className="text-gradient">Once.</span> Love It <span className="text-gradient-gold">Always.</span>
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}
+            className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto"
+          >
+            Rent the fit for tonight's party. Sell what you've outgrown. Donate and earn ₹ in your wallet. Fashion that loops.
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
+            className="mt-8 flex flex-wrap gap-3 justify-center"
+          >
+            <Link to="/shop" className="group flex items-center gap-2 px-6 py-3.5 rounded-full bg-blush-grad text-white font-semibold glow hover:scale-105 transition">
+              Shop the Drop <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition" />
+            </Link>
+            <Link to="/sell" className="px-6 py-3.5 rounded-full glass font-semibold hover:bg-primary hover:text-primary-foreground transition">
+              Sell Your Closet
+            </Link>
+          </motion.div>
+
+          <div className="mt-14 grid grid-cols-3 gap-6 max-w-2xl mx-auto">
+            {[
+              { n: "12K+", l: "Fits Listed" },
+              { n: "₹2L+", l: "Donated Value" },
+              { n: "98%", l: "Happy Resellers" },
+            ].map((s) => (
+              <div key={s.l}>
+                <div className="text-2xl md:text-4xl font-display font-extrabold text-gradient-gold">{s.n}</div>
+                <div className="text-xs text-muted-foreground mt-1">{s.l}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
