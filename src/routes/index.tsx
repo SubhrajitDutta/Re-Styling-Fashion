@@ -57,9 +57,9 @@ function Index() {
 
             <div className="mt-12 grid grid-cols-3 gap-6 max-w-md">
               {[
-                { n: "12K+", l: "fits listed" },
-                { n: "₹2L+", l: "donated value" },
-                { n: "98%", l: "happy resellers" },
+                { n: "12K+", l: "Fits Listed" },
+                { n: "₹2L+", l: "Donated Value" },
+                { n: "98%", l: "Happy Resellers" },
               ].map((s) => (
                 <div key={s.l}>
                   <div className="text-2xl md:text-3xl font-display font-extrabold text-gradient-gold">{s.n}</div>
