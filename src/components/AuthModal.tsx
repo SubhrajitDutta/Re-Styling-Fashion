@@ -55,9 +55,9 @@ export function AuthModal({ open, onClose }: Props) {
                   transition={{ duration: 0.25 }}
                 >
                   <h2 className="text-3xl font-display font-extrabold mb-1">
-                    {mode === "login" && <>welcome <span className="text-gradient">back</span></>}
-                    {mode === "signup" && <>join the <span className="text-gradient">drop</span></>}
-                    {mode === "forgot" && <>reset <span className="text-gradient">access</span></>}
+                    {mode === "login" && <>Welcome <span className="text-gradient">Back</span></>}
+                    {mode === "signup" && <>Join the <span className="text-gradient">Drop</span></>}
+                    {mode === "forgot" && <>Reset <span className="text-gradient">Access</span></>}
                   </h2>
                   <p className="text-sm text-muted-foreground mb-6">
                     {mode === "login" && "Log in to your closet"}
