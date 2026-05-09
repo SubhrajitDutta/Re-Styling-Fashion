@@ -140,7 +140,7 @@ function Index() {
         <div className="relative overflow-hidden rounded-3xl bg-hero p-10 md:p-16 noise">
           <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-gold-grad opacity-30 blur-3xl" />
           <div className="relative max-w-2xl">
-            <h2 className="font-display font-black text-4xl md:text-6xl text-white">closet full,<br /> wallet fuller.</h2>
+            <h2 className="font-display font-black text-4xl md:text-6xl text-white">Closet Full,<br /> Wallet Fuller.</h2>
             <p className="mt-4 text-white/80">Sell your first item this week and we'll boost your listing for free.</p>
             <Link to="/sell" className="inline-flex items-center gap-2 mt-6 px-6 py-3.5 rounded-full bg-white text-black font-semibold hover:scale-105 transition">
               Start selling <ArrowRight className="w-4 h-4" />
