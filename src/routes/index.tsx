@@ -27,15 +27,15 @@ function Index() {
               initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-xs font-semibold uppercase tracking-widest"
             >
-              <Sparkles className="w-3 h-3 text-gradient-gold" /> drop 02 · live now
+              <Sparkles className="w-3 h-3 text-gradient-gold" /> Drop 02 · Live Now
             </motion.div>
             <motion.h1
               initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
               className="mt-6 font-display font-black text-5xl md:text-7xl lg:text-8xl leading-[0.9]"
             >
-              wear it<br />
-              <span className="text-gradient">once.</span><br />
-              love it <span className="text-gradient-gold">always.</span>
+              Wear It<br />
+              <span className="text-gradient">Once.</span><br />
+              Love It <span className="text-gradient-gold">Always.</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}
@@ -57,9 +57,9 @@ function Index() {
 
             <div className="mt-12 grid grid-cols-3 gap-6 max-w-md">
               {[
-                { n: "12K+", l: "fits listed" },
-                { n: "₹2L+", l: "donated value" },
-                { n: "98%", l: "happy resellers" },
+                { n: "12K+", l: "Fits Listed" },
+                { n: "₹2L+", l: "Donated Value" },
+                { n: "98%", l: "Happy Resellers" },
               ].map((s) => (
                 <div key={s.l}>
                   <div className="text-2xl md:text-3xl font-display font-extrabold text-gradient-gold">{s.n}</div>
@@ -92,7 +92,7 @@ function Index() {
       {/* HOW IT WORKS */}
       <section className="max-w-7xl mx-auto px-4 md:px-8 py-16">
         <div className="text-center mb-12">
-          <h2 className="font-display font-extrabold text-4xl md:text-5xl">three vibes, <span className="text-gradient">one closet</span></h2>
+          <h2 className="font-display font-extrabold text-4xl md:text-5xl">Three Vibes, <span className="text-gradient">One Closet</span></h2>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {[
@@ -123,8 +123,8 @@ function Index() {
       <section className="max-w-7xl mx-auto px-4 md:px-8 py-16">
         <div className="flex items-end justify-between mb-8">
           <div>
-            <div className="text-xs uppercase tracking-widest text-gradient-gold font-bold">curated for you</div>
-            <h2 className="font-display font-extrabold text-4xl md:text-5xl mt-2">trending fits</h2>
+            <div className="text-xs uppercase tracking-widest text-gradient-gold font-bold">Curated For You</div>
+            <h2 className="font-display font-extrabold text-4xl md:text-5xl mt-2">Trending Fits</h2>
           </div>
           <Link to="/shop" className="hidden md:inline-flex items-center gap-1 text-sm font-semibold">
             See all <ArrowRight className="w-4 h-4" />
@@ -140,7 +140,7 @@ function Index() {
         <div className="relative overflow-hidden rounded-3xl bg-hero p-10 md:p-16 noise">
           <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-gold-grad opacity-30 blur-3xl" />
           <div className="relative max-w-2xl">
-            <h2 className="font-display font-black text-4xl md:text-6xl text-white">closet full,<br /> wallet fuller.</h2>
+            <h2 className="font-display font-black text-4xl md:text-6xl text-white">Closet Full,<br /> Wallet Fuller.</h2>
             <p className="mt-4 text-white/80">Sell your first item this week and we'll boost your listing for free.</p>
             <Link to="/sell" className="inline-flex items-center gap-2 mt-6 px-6 py-3.5 rounded-full bg-white text-black font-semibold hover:scale-105 transition">
               Start selling <ArrowRight className="w-4 h-4" />

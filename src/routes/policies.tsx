@@ -34,7 +34,7 @@ const sections = [
 function Policies() {
   return (
     <div className="max-w-3xl mx-auto px-4 md:px-8 pt-8 pb-16">
-      <h1 className="font-display font-extrabold text-4xl md:text-6xl mb-2">policies</h1>
+      <h1 className="font-display font-extrabold text-4xl md:text-6xl mb-2">Policies</h1>
       <p className="text-muted-foreground mb-10">Clear rules. No fine print.</p>
       <div className="space-y-4">
         {sections.map((s) => (

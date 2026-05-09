@@ -27,7 +27,7 @@ function Dashboard() {
     <div className="max-w-6xl mx-auto px-4 md:px-8 pt-8 pb-16">
       <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
         className="font-display font-extrabold text-4xl md:text-6xl mb-8">
-        your <span className="text-gradient">wallet</span>
+        Your <span className="text-gradient">Wallet</span>
       </motion.h1>
 
       <div className="grid md:grid-cols-3 gap-4 mb-8">
@@ -41,7 +41,7 @@ function Dashboard() {
           </div>
           <div className="relative mt-4 flex items-baseline gap-3">
             <div className="font-display font-black text-7xl text-white">{points}</div>
-            <div className="text-white/70">points</div>
+            <div className="text-white/70">Points</div>
           </div>
           <div className="relative text-gradient-gold font-display font-bold text-xl mt-2">≈ ₹{inr} to spend</div>
           <Link to="/shop" className="relative inline-flex items-center gap-2 mt-6 px-5 py-3 rounded-full bg-white text-black font-semibold text-sm">
