@@ -41,38 +41,39 @@
 
 :root {
   --radius: 1rem;
-  --background: oklch(0.12 0.04 255);
-  --foreground: oklch(0.98 0.01 240);
-  --card: oklch(0.16 0.05 255);
-  --card-foreground: oklch(0.98 0.01 240);
-  --popover: oklch(0.16 0.05 255);
-  --popover-foreground: oklch(0.98 0.01 240);
-  --primary: oklch(0.62 0.18 250);
-  --primary-foreground: oklch(0.98 0.01 240);
-  --secondary: oklch(0.22 0.06 255);
-  --secondary-foreground: oklch(0.98 0.01 240);
-  --muted: oklch(0.2 0.05 255);
-  --muted-foreground: oklch(0.72 0.04 240);
+  --background: oklch(0.99 0.005 240);
+  --foreground: oklch(0.18 0.06 255);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.18 0.06 255);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0.06 255);
+  --primary: oklch(0.55 0.2 250);
+  --primary-foreground: oklch(0.99 0.005 240);
+  --secondary: oklch(0.95 0.03 245);
+  --secondary-foreground: oklch(0.2 0.08 255);
+  --muted: oklch(0.95 0.02 240);
+  --muted-foreground: oklch(0.45 0.04 250);
   --accent: oklch(0.65 0.18 230);
-  --accent-foreground: oklch(0.1 0.04 255);
+  --accent-foreground: oklch(0.99 0.005 240);
   --destructive: oklch(0.6 0.22 25);
-  --destructive-foreground: oklch(0.98 0.01 240);
-  --border: oklch(0.3 0.06 250 / 60%);
-  --input: oklch(0.22 0.06 255);
-  --ring: oklch(0.62 0.18 250);
+  --destructive-foreground: oklch(0.99 0.005 240);
+  --border: oklch(0.55 0.12 250 / 18%);
+  --input: oklch(0.97 0.02 245);
+  --ring: oklch(0.55 0.2 250);
   --gold: oklch(0.85 0.14 90);
   --blush: oklch(0.7 0.16 245);
-  --violet-deep: oklch(0.35 0.18 260);
-  --midnight: oklch(0.1 0.06 260);
+  --violet-deep: oklch(0.45 0.2 260);
+  --midnight: oklch(0.2 0.1 260);
 
-  --gradient-hero: linear-gradient(135deg, oklch(0.62 0.18 250) 0%, oklch(0.42 0.2 255) 45%, oklch(0.2 0.12 260) 100%);
-  --gradient-gold: linear-gradient(135deg, oklch(0.88 0.16 90) 0%, oklch(0.78 0.18 60) 100%);
-  --gradient-blush: linear-gradient(135deg, oklch(0.72 0.16 235) 0%, oklch(0.55 0.2 250) 50%, oklch(0.3 0.18 265) 100%);
-  --gradient-mesh: radial-gradient(at 20% 10%, oklch(0.5 0.22 250 / 50%) 0px, transparent 50%),
-                   radial-gradient(at 80% 20%, oklch(0.45 0.2 230 / 45%) 0px, transparent 50%),
-                   radial-gradient(at 60% 80%, oklch(0.35 0.18 270 / 40%) 0px, transparent 50%);
-  --shadow-glow: 0 20px 60px -20px oklch(0.55 0.22 250 / 55%);
-  --shadow-gold: 0 10px 40px -10px oklch(0.85 0.16 90 / 40%);
+  --gradient-hero: linear-gradient(135deg, oklch(0.65 0.2 250) 0%, oklch(0.5 0.22 245) 50%, oklch(0.32 0.18 260) 100%);
+  --gradient-gold: linear-gradient(135deg, oklch(0.88 0.16 90) 0%, oklch(0.72 0.18 50) 100%);
+  --gradient-blush: linear-gradient(135deg, oklch(0.72 0.18 235) 0%, oklch(0.55 0.22 250) 50%, oklch(0.4 0.22 260) 100%);
+  --gradient-blush-hover: linear-gradient(135deg, oklch(0.55 0.22 250) 0%, oklch(0.4 0.22 260) 50%, oklch(0.72 0.18 235) 100%);
+  --gradient-mesh: radial-gradient(at 20% 10%, oklch(0.7 0.18 240 / 22%) 0px, transparent 55%),
+                   radial-gradient(at 80% 20%, oklch(0.65 0.2 220 / 18%) 0px, transparent 55%),
+                   radial-gradient(at 60% 90%, oklch(0.55 0.2 260 / 16%) 0px, transparent 55%);
+  --shadow-glow: 0 20px 50px -18px oklch(0.55 0.22 250 / 45%);
+  --shadow-gold: 0 10px 36px -10px oklch(0.85 0.16 90 / 50%);
 }
 
 .dark {
@@ -106,17 +107,33 @@
     color: transparent;
   }
   .bg-hero { background: var(--gradient-hero); }
-  .bg-gold-grad { background: var(--gradient-gold); }
-  .bg-blush-grad { background: var(--gradient-blush); }
+  .bg-gold-grad {
+    background: var(--gradient-gold);
+    background-size: 200% 200%;
+    transition: background-position 0.5s ease, filter 0.3s ease, transform 0.3s ease;
+  }
+  .bg-gold-grad:hover { background-position: 100% 100%; filter: brightness(1.08); }
+  .bg-blush-grad {
+    background: var(--gradient-blush);
+    background-size: 200% 200%;
+    transition: background-position 0.5s ease, filter 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .bg-blush-grad:hover {
+    background-image: var(--gradient-blush-hover);
+    background-position: 100% 100%;
+    filter: brightness(1.05);
+  }
   .glass {
-    background: oklch(1 0 0 / 5%);
+    background: oklch(1 0 0 / 65%);
     backdrop-filter: blur(20px);
-    border: 1px solid oklch(1 0 0 / 10%);
+    border: 1px solid oklch(0.55 0.12 250 / 18%);
+    box-shadow: 0 6px 24px -12px oklch(0.4 0.18 250 / 18%);
   }
   .glass-strong {
-    background: oklch(0.1 0.04 290 / 70%);
+    background: oklch(1 0 0 / 85%);
     backdrop-filter: blur(24px);
-    border: 1px solid oklch(1 0 0 / 12%);
+    border: 1px solid oklch(0.55 0.12 250 / 22%);
+    box-shadow: 0 12px 32px -16px oklch(0.4 0.18 250 / 25%);
   }
   .glow { box-shadow: var(--shadow-glow); }
   .glow-gold { box-shadow: var(--shadow-gold); }
@@ -146,7 +163,8 @@
 .animate-float { animation: float 6s ease-in-out infinite; }
 .animate-blob { animation: blob 12s ease-in-out infinite; }
 .shimmer {
-  background: linear-gradient(90deg, transparent, oklch(1 0 0 / 10%), transparent);
+  background: linear-gradient(90deg, transparent, oklch(1 0 0 / 25%), transparent);
   background-size: 200% 100%;
   animation: shimmer 2s infinite;
 }
+
