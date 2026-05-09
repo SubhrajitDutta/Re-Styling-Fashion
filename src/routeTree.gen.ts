@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as ShopRouteImport } from './routes/shop'
 import { Route as SellRouteImport } from './routes/sell'
+import { Route as PoliciesRouteImport } from './routes/policies'
 import { Route as DonateRouteImport } from './routes/donate'
 import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as IndexRouteImport } from './routes/index'
@@ -23,6 +24,11 @@ const ShopRoute = ShopRouteImport.update({
 const SellRoute = SellRouteImport.update({
   id: '/sell',
   path: '/sell',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PoliciesRoute = PoliciesRouteImport.update({
+  id: '/policies',
+  path: '/policies',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DonateRoute = DonateRouteImport.update({
@@ -45,6 +51,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/dashboard': typeof DashboardRoute
   '/donate': typeof DonateRoute
+  '/policies': typeof PoliciesRoute
   '/sell': typeof SellRoute
   '/shop': typeof ShopRoute
 }
@@ -52,6 +59,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/dashboard': typeof DashboardRoute
   '/donate': typeof DonateRoute
+  '/policies': typeof PoliciesRoute
   '/sell': typeof SellRoute
   '/shop': typeof ShopRoute
 }
@@ -60,21 +68,30 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/dashboard': typeof DashboardRoute
   '/donate': typeof DonateRoute
+  '/policies': typeof PoliciesRoute
   '/sell': typeof SellRoute
   '/shop': typeof ShopRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/dashboard' | '/donate' | '/sell' | '/shop'
+  fullPaths: '/' | '/dashboard' | '/donate' | '/policies' | '/sell' | '/shop'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/dashboard' | '/donate' | '/sell' | '/shop'
-  id: '__root__' | '/' | '/dashboard' | '/donate' | '/sell' | '/shop'
+  to: '/' | '/dashboard' | '/donate' | '/policies' | '/sell' | '/shop'
+  id:
+    | '__root__'
+    | '/'
+    | '/dashboard'
+    | '/donate'
+    | '/policies'
+    | '/sell'
+    | '/shop'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   DashboardRoute: typeof DashboardRoute
   DonateRoute: typeof DonateRoute
+  PoliciesRoute: typeof PoliciesRoute
   SellRoute: typeof SellRoute
   ShopRoute: typeof ShopRoute
 }
@@ -93,6 +110,13 @@ declare module '@tanstack/react-router' {
       path: '/sell'
       fullPath: '/sell'
       preLoaderRoute: typeof SellRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/policies': {
+      id: '/policies'
+      path: '/policies'
+      fullPath: '/policies'
+      preLoaderRoute: typeof PoliciesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/donate': {
@@ -123,6 +147,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   DashboardRoute: DashboardRoute,
   DonateRoute: DonateRoute,
+  PoliciesRoute: PoliciesRoute,
   SellRoute: SellRoute,
   ShopRoute: ShopRoute,
 }
