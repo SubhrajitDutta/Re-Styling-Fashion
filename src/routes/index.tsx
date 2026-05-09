@@ -123,8 +123,8 @@ function Index() {
       <section className="max-w-7xl mx-auto px-4 md:px-8 py-16">
         <div className="flex items-end justify-between mb-8">
           <div>
-            <div className="text-xs uppercase tracking-widest text-gradient-gold font-bold">curated for you</div>
-            <h2 className="font-display font-extrabold text-4xl md:text-5xl mt-2">trending fits</h2>
+            <div className="text-xs uppercase tracking-widest text-gradient-gold font-bold">Curated For You</div>
+            <h2 className="font-display font-extrabold text-4xl md:text-5xl mt-2">Trending Fits</h2>
           </div>
           <Link to="/shop" className="hidden md:inline-flex items-center gap-1 text-sm font-semibold">
             See all <ArrowRight className="w-4 h-4" />
