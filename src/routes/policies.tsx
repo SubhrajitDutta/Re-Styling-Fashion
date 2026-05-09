@@ -3,7 +3,7 @@ import { Shield, RefreshCw, AlertTriangle, FileText } from "lucide-react";
 
 export const Route = createFileRoute("/policies")({
   head: () => ({
-    meta: [{ title: "Policies — re/styling" }],
+    meta: [{ title: "Policies — re-stylin" }],
   }),
   component: Policies,
 });
@@ -27,7 +27,7 @@ const sections = [
   {
     icon: FileText,
     title: "Terms of Service",
-    body: "By using re/styling you agree to our community guidelines: honest listings, accurate condition labels, respectful interactions. Violations may result in account suspension. Points have no cash value outside the platform.",
+    body: "By using re-stylin you agree to our community guidelines: honest listings, accurate condition labels, respectful interactions. Violations may result in account suspension. Points have no cash value outside the platform.",
   },
 ];
 

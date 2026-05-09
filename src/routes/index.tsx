@@ -6,7 +6,7 @@ import { ProductCard, MOCK_PRODUCTS } from "@/components/ProductCard";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "re/styling — buy, rent, donate pre-loved fashion" },
+      { title: "re-stylin — buy, rent, donate pre-loved fashion" },
       { name: "description", content: "Circular fashion marketplace for Gen Z. Rent that party fit. Sell your closet. Donate and earn points." },
     ],
   }),
