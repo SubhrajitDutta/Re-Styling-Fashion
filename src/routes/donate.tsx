@@ -44,16 +44,16 @@ function Donate() {
         <div className="relative overflow-hidden rounded-3xl bg-hero p-10 noise">
           <div className="absolute -bottom-20 -right-20 w-80 h-80 rounded-full bg-gold-grad opacity-30 blur-3xl" />
           <Heart className="w-10 h-10 text-white mb-4" />
-          <h2 className="font-display font-black text-4xl md:text-5xl text-white">your closet, <br /> someone's smile.</h2>
+          <h2 className="font-display font-black text-4xl md:text-5xl text-white">Your Closet, <br /> Someone's Smile.</h2>
           <p className="mt-4 text-white/80 max-w-md">Last year, our community donated 8,400+ items to NGOs across India.</p>
           <div className="mt-8 flex gap-6">
             <div>
               <div className="text-3xl font-display font-black text-white">8.4K</div>
-              <div className="text-xs text-white/70">items donated</div>
+              <div className="text-xs text-white/70">Items Donated</div>
             </div>
             <div>
               <div className="text-3xl font-display font-black text-gradient-gold">42K</div>
-              <div className="text-xs text-white/70">points earned</div>
+              <div className="text-xs text-white/70">Points Earned</div>
             </div>
           </div>
         </div>
