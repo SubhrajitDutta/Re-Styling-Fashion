@@ -27,15 +27,15 @@ function Index() {
               initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-xs font-semibold uppercase tracking-widest"
             >
-              <Sparkles className="w-3 h-3 text-gradient-gold" /> drop 02 · live now
+              <Sparkles className="w-3 h-3 text-gradient-gold" /> Drop 02 · Live Now
             </motion.div>
             <motion.h1
               initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
               className="mt-6 font-display font-black text-5xl md:text-7xl lg:text-8xl leading-[0.9]"
             >
-              wear it<br />
-              <span className="text-gradient">once.</span><br />
-              love it <span className="text-gradient-gold">always.</span>
+              Wear It<br />
+              <span className="text-gradient">Once.</span><br />
+              Love It <span className="text-gradient-gold">Always.</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}
